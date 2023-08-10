@@ -14,4 +14,5 @@ CPMAddPackage("gh:abdes/cryptopp-cmake#v8.8.0")
 find_package(MPI REQUIRED)
 
 add_executable(lab02 main.cpp)
+add_executable(lab02 mainOMP.cpp)
 target_link_libraries(lab02 fmt::fmt cryptopp MPI::MPI_CXX lodepng)
